@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101613" />
+    <meta name="description" content="Meet Prajwal Naik. Ask his AI profile about his experience, skills, and projects." />
+    <title>Prajwal Naik — A resume you can talk to</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#home" aria-label="Prajwal Naik home"><span class="brand-mark">p<span>·</span></span><span>Prajwal Naik</span></a>
+        <nav aria-label="Main navigation"><a href="#story">The idea</a><a href="#assistant">Ask me</a></nav>
+        <a class="top-cta" href="#assistant">Meet the candidate <span>↗</span></a>
+      </header>
+
+      <main id="home">
+        <section class="hero" id="story">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="live-dot"></span> A RESUME YOU CAN TALK TO</div>
+            <h1>More than a resume.<br /><em>A real conversation.</em></h1>
+            <p class="hero-lede">A little context goes a long way. Get to know the person behind the bullet points, one good question at a time.</p>
+            <a class="button-primary" href="#assistant">Start a conversation <span>↓</span></a>
+            <div class="hero-note"><span class="note-icon">✳</span><span>Answers grounded in my resume.<br /><strong>No made-up credentials. Just me.</strong></span></div>
+          </div>
+          <div class="hero-art" aria-label="Illustration of an open conversation">
+            <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+            <div class="art-card card-back"><span class="mini-label">THE HUMAN BIT</span><div class="scribble">curiosity<br />+ follow-through</div><div class="card-line"></div><div class="card-line short"></div></div>
+            <div class="art-card card-front"><div class="profile-row"><div class="avatar">P<span>✳</span></div><div><div class="profile-name">The candidate</div><div class="profile-caption"><span class="live-dot"></span> Here to answer</div></div></div><div class="divider"></div><div class="quote-label">A GOOD PLACE TO START</div><div class="quote">“What kind of problems do you love solving?”</div><div class="chat-pill"><span class="sparkle">✦</span> Ask anything about my experience</div></div>
+            <div class="float-tag tag-top"><span>✦</span> Thoughtful answers</div><div class="float-tag tag-bottom">✳ &nbsp;Experience, with context</div>
+            <div class="art-sun"></div>
+          </div>
+          <div class="hero-index"><span>01</span><span class="index-rule"></span><span>GET TO KNOW ME</span></div>
+        </section>
+
+        <section class="intro-strip"><span class="strip-star">✳</span><p>Because the best candidate conversations don’t start and end with a PDF.</p><span class="strip-caption">A NEW KIND OF INTRODUCTION</span></section>
+
+        <section class="chat-section" id="assistant">
+          <div class="section-heading"><div><div class="eyebrow">YOUR QUESTIONS, MY EXPERIENCE</div><h2>Let’s get into<br /><em>the details.</em></h2></div><p>Ask what you’d ask in a first conversation. I’ll answer from the information in my resume—and let you know when I don’t have the answer.</p></div>
+          <div class="chat-layout">
+            <aside class="prompt-panel"><div class="prompt-top"><span class="prompt-label">NEED AN ICEBREAKER?</span><span class="prompt-spark">✳</span></div><h3>Pick a question<br />to get us started.</h3><div class="suggestions">
+              <button class="suggestion" data-question="Give me a quick introduction to your background."><span class="suggestion-icon">↗</span><span>Give me the quick intro</span><span class="suggestion-arrow">↗</span></button>
+              <button class="suggestion" data-question="What are your strongest skills?"><span class="suggestion-icon">✳</span><span>What are your strongest skills?</span><span class="suggestion-arrow">↗</span></button>
+              <button class="suggestion" data-question="Tell me about a project you worked on."><span class="suggestion-icon">⌘</span><span>Tell me about a project</span><span class="suggestion-arrow">↗</span></button>
+              <button class="suggestion" data-question="What kind of role are you looking for?"><span class="suggestion-icon">◎</span><span>What are you looking for?</span><span class="suggestion-arrow">↗</span></button>
+            </div><div class="privacy-note"><span>✦</span> Answers stay grounded in the resume.</div></aside>
+            <div class="chat-card">
+            <div class="chat-header"><div class="assistant-avatar">p<span>✦</span></div><div class="assistant-info"><strong>Prajwal’s AI profile</strong><span><i></i> Ready when you are</span></div><span class="header-badge">POWERED BY HIREME AI</span></div>
+              <div class="messages" id="messages" aria-live="polite"><div class="message assistant-message"><div class="message-avatar">h</div><div><div class="message-author">HireMe <span>JUST NOW</span></div><div class="bubble">Hey, glad you’re here. What would you like to know about my background or experience?</div></div></div></div>
+              <div class="typing" id="typing" hidden><span></span><span></span><span></span><small>Putting a thoughtful answer together…</small></div>
+              <form class="composer" id="chat-form"><label class="sr-only" for="question">Ask a question</label><textarea id="question" rows="1" placeholder="Ask me anything about my experience…" maxlength="1000" required></textarea><button class="send-button" type="submit" aria-label="Send question">↑</button><div class="composer-hint">↵ &nbsp;to send <span>1000</span></div></form>
+            </div>
+          </div>
+          <p class="chat-footnote">The assistant uses the candidate’s resume as its source. For anything else, just ask the candidate directly.</p>
+        </section>
+        <section class="closing"><span class="closing-star">✳</span><h2>The next step is<br /><em>up to you.</em></h2><p>Found something interesting? Start a conversation and let’s see where it goes.</p><a class="button-dark" href="#assistant">Ask one more question <span>↗</span></a><span class="closing-mark">PRAJWAL NAIK · POWERED BY HIREME AI</span></section>
+      </main>
+      <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">p<span>·</span></span><span>Prajwal Naik</span></a><span>Personal profile · Powered by HireMe AI</span><a href="#home">BACK TO TOP ↑</a></footer>
+    </div>
+    <script src="/static/app.js" defer></script>
+  </body>
+</html>
